@@ -1,15 +1,18 @@
 package BID.SWE;
 
-public class Exercise3Impl implements Exercise3
-{
-
+public class Exercise3Impl implements Exercise3 {
     @Override
-    public Object Method1() {
-        return null;
+    public BetterMap Method1() {
+        return new BetterMap();
     }
 
     @Override
-    public Object Method2() {
-        return null;
+    public Bewegung[] Method2() {
+        Springen jump = new Springen();
+        Laufen run = new Laufen();
+
+        Bewegung[] array = {jump, run};
+
+        return array;
     }
 }
