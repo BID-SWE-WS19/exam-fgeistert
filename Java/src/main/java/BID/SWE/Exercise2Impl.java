@@ -3,17 +3,19 @@ package BID.SWE;
 public class Exercise2Impl implements Exercise2
 {
     @Override
-    public Object Method1() {
-        return null;
+    public BetterCell Method1() {
+        return new BetterCell();
     }
 
     @Override
     public int Method2() {
-        return 0;
+        BetterCell cell = new BetterCell();
+        return cell.Grow();
     }
 
     @Override
     public boolean Method3(int i) {
-        return false;
+        BetterCell cell = new BetterCell();
+        return cell.IsAlive(i);
     }
 }
